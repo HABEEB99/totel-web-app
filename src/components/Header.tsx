@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import Nav from "./Nav";
 
 import { BiBell } from "react-icons/bi";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
           <Nav />
         </div>
 
-        <div className="flex items-center justify-center space-x-3">
+        <div className="hidden md:flex items-center justify-center space-x-3">
           <button className="px-3 w-fit h-10 rounded-full border-[1px] border-gray-400">
             Create Post
           </button>
@@ -30,6 +31,8 @@ const Header = () => {
             className="cursor-pointer"
           />
         </div>
+
+        <FaBars className="md:hidden text-4xl font-bold cursor-pointer" />
       </div>
     </header>
   );
